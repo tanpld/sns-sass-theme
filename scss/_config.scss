@@ -1,6 +1,27 @@
-$primary-color: #4717f6;
+$primary-color: #a239ca;
 $light-color: #e7dfdd;
 $dark-color: #0e0b16;
 $danger-color: #ff3b3f;
-$sucess-color: #3cc47c;
+$success-color: #3cc47c;
 $max-width: 1100px;
+
+// shadow
+$shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+$shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$shadow-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+$shadow-4: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+// Set text color based on background
+@function set-text-color($color) {
+  @if (lightness($color) > 62) {
+    @return $dark-color;
+  } @else {
+    @return $light-color;
+  }
+}
+
+// Set background color & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
