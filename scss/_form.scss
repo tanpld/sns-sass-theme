@@ -6,7 +6,7 @@
   &__text {
     display: block;
     margin-top: 0.25rem;
-    color: $light-color;
+    color: $dark-color;
   }
 
   input[type='text'],
@@ -18,13 +18,13 @@
     display: block;
     width: 100%;
     border: solid 1px transparent;
-    border-radius: 0.25rem;
+    border-bottom: solid 1px $primary-color;
     padding: 0.5rem;
     outline: none;
+    transition: all 0.2s ease-in;
 
     &:focus {
-      border: solid 1px $primary-color;
-      box-shadow: $shadow-1;
+      box-shadow: none;
     }
   }
 }

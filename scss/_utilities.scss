@@ -62,11 +62,11 @@
   font-size: 1rem;
   cursor: pointer;
   outline: none;
-  box-shadow: $shadow-2;
+  box-shadow: $shadow-1;
   transition: all 0.2s ease-in;
 
   &:hover {
-    box-shadow: $shadow-4;
+    box-shadow: $shadow-2;
     background: lighten($light-color, 20%);
   }
 
@@ -109,7 +109,7 @@
   padding: 0.5rem;
   color: $primary-color;
   opacity: 0.9;
-  box-shadow: $shadow-4;
+  box-shadow: $shadow-3;
 
   &-primary {
     @include set-background($primary-color);

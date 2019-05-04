@@ -12,8 +12,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: $dark-color;
-  color: $light-color;
+  color: $dark-color;
 }
 
 a {
@@ -39,7 +38,7 @@ img {
   padding: 0.5rem 2rem;
   width: 100%;
   z-index: 1;
-  box-shadow: $shadow-4;
+  box-shadow: $shadow-2;
 
   ul {
     display: flex;
