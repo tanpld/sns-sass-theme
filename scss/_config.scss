@@ -1,5 +1,5 @@
 $primary-color: #a239ca;
-$light-color: #fff;
+$light-color: #e7dfdd;
 $dark-color: #0e0b16;
 $danger-color: #ef5753;
 $success-color: #3cc47c;
@@ -16,7 +16,7 @@ $shadow-4: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   @if (lightness($color) > 70) {
     @return $dark-color;
   } @else {
-    @return $light-color;
+    @return #fff;
   }
 }
 

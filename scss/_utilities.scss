@@ -132,6 +132,45 @@
   }
 }
 
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: $primary-color;
+  margin: 1.5rem 0;
+}
+
+.br-1 {
+  border-radius: 0.25rem;
+}
+
+// Badges
+
+.badge {
+  margin: 0.25rem 0;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  width: fit-content;
+  background: $primary-color;
+  color: #fff;
+  text-align: center;
+
+  &-danger {
+    @include set-background($danger-color);
+  }
+
+  &-success {
+    @include set-background($success-color);
+  }
+
+  &-light {
+    @include set-background($light-color);
+  }
+}
+
 .dark-overlay {
   position: absolute;
   top: 0;
