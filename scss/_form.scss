@@ -1,0 +1,30 @@
+.form {
+  &__group {
+    margin: 1.25rem 0;
+  }
+
+  &__text {
+    display: block;
+    margin-top: 0.25rem;
+    color: $light-color;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password'],
+  input[type='date'],
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    border: solid 1px transparent;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    outline: none;
+
+    &:focus {
+      border: solid 1px $primary-color;
+      box-shadow: $shadow-1;
+    }
+  }
+}
